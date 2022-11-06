@@ -1,0 +1,162 @@
+
+
+nav {
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav-buttons{
+  width: 6em;
+}
+
+.main-content {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+ gap: 500px;
+   padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 300px;
+  align-items: center;
+
+}
+
+.content-img{
+  width: 700px;
+}
+.content-title {
+  display: block;
+}
+
+.title {
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 30px;
+ 
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 300px;
+  margin-bottom: 100px;
+}
+
+.footer-segment {
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer-segment p {
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(180, 180, 180);
+  margin-bottom: 30px;
+}
+.footer-help{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction:row;
+  gap: 50px;
+}
+.footer-social {
+  padding-left: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.social-img {
+  width: 48px;
+}
+.l1 {
+  width: 1px;
+  background-color: #adadad;
+}
+
+
+
+
+
+
+
+.swap-test1
+{
+  display: block;
+}
+.swap-test2{
+  display: none;
+}
+.swap-size1{
+  width: 700px;
+}
+.swap-size2{
+
+}
+
+
+
+/*query*/
+@media (max-width:800px) {
+ .main-content{
+  width: auto;
+ }
+  .content {
+    flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-segment{
+    justify-content: flex-start;
+  }
+  .title {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    min-width: none;
+  }
+  .content h3 {
+    min-width: 350px;
+    width: 200px;
+    line-height: 35px;
+  }
+  
+  .swap-test1{
+    display: none;
+  }
+  .swap-test2{
+    display: block;
+  }
+  .swap-size1{
+    width: 300px;
+  }
+}
